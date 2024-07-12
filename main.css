@@ -6,25 +6,33 @@
 }
 body{
     color: #ffffff;
-    margin: 0;
+    margin: 0 auto;
 }
-@media (min-width: 768px) {
+.container{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Small */
+@media (min-width: 320px) {
     .container {
-    width: 750px;
+    width: 300px;
     }
 }
   /* Medium */
-@media (min-width: 992px) {
+@media (min-width: 768px) {
     .container {
-    width: 970px;
+    width: 740px;
     }
 }
   /* Large */
 @media (min-width: 1200px) {
     .container {
-    width: 1170px;
+    width: 1180px;
     }
 }
+
 .header{
         background-color: #0b9586;
     .container{
@@ -88,6 +96,41 @@ body{
             font-size: 20px;
         }
     }
+}
+
+@media (max-width: 320px) {
+    .header {
+    width: 320px;
+    .container{
+            width: 300px;
+            padding: 0px 10px;
+    }
+    .container img{
+        display: none;
+    }
+    .container ul{
+        font-size: 10px;
+        padding: 0px;
+    }
+    .container ul li{
+        margin-right: 15px;
+    }
+    .container .callus{
+        font-size: 10px;
+        margin-bottom: 7px;
+    }
+    .container span{
+        font-size: 6px;
+        position: relative;
+        top: -4px;
+    }
+}
+}
+  /* Medium */
+@media (max-width: 768px) {
+}
+  /* Large */
+@media (max-width: 1200px) {
 }
 
 .Solar-Panel{
@@ -163,6 +206,60 @@ body{
         margin-top: 25px;
     }
 }
+@media (max-width: 320px) {
+    .Solar-Panel {
+    width: 320px;
+    .container{
+        width: 300px;
+        padding: 0px 10px;
+        margin: 0
+    }
+    img{
+        width: 100%;
+        position: absolute;
+        top: 54px;
+    }
+    .container .sign{
+        display: none
+    }
+    .container .title{
+        font-weight: bold;
+        font-size: 14px;
+        margin-bottom: 22px;
+        margin-top: 11px;
+        width: 250px;
+    }
+    .container .text{
+        margin-top: -16px;
+        width: 250px;
+        font-size: 9px;
+    }
+    .container .callus{
+        font-size: 7px;
+        width: 66px;
+        height: 27px;
+        line-height: 3.9;
+        margin-top: 25px;
+    }
+    .container .requst{
+        font-size: 7px;
+        width: 80px;
+        height: 27px;
+        line-height: 3.9;
+        margin-left: -117px;
+        margin-top: 38px;
+    }
+
+}
+}
+  /* Medium */
+@media (max-width: 768px) {
+
+}
+  /* Large */
+@media (max-width: 1200px) {
+
+}
 
 .installer{
     background-color: white;
@@ -193,12 +290,9 @@ body{
         }
     }
     .img{
-        img{
         position: absolute;
         right: 10pc;
         margin-top: 45px;
-        
-        }
     }
     .energy{
         align-content: end;
@@ -222,6 +316,43 @@ body{
             left: 7px;
         }
     }
+}
+
+@media (max-width: 320px) {
+    .installer {
+    width: 320px;
+    margin-bottom: 120px;
+    .container{
+        width: 300px;
+        padding: 0px 10px;
+        margin: 0
+    }
+    .energy {
+        display: none;
+    }
+    .img img{
+        width: 160px;
+        position: absolute;
+        top: -1pc;
+        left: -3pc;
+    }
+    .container .content{
+        font-size: 8px;
+    }
+    .container .title{
+        font-weight: bold;
+        font-size: 18px;
+        width: 250px;
+        position: relative;
+        top: -11pc;
+    }
+    .container .text{
+        width: 250px;
+        font-size: 10px;
+        position: relative;
+        bottom: 11pc;
+    }
+}
 }
 
 .power{
@@ -260,6 +391,40 @@ body{
 
 }
 
+@media (max-width: 320px) {
+
+    .power{
+    width: 320px;
+    margin-bottom: 120px;
+    
+    .container{
+        width: 300px;
+        padding: 0px 10px;
+        margin: 0;
+    }
+    img{
+        width: 100%;
+        position: absolute;
+        top: 59px;
+    }
+    .container h1{
+        position: absolute;
+        bottom: 26px;
+        font-size: 10px;
+    }
+    .container p{
+        font-size: 6px;
+        width: 166px;
+        position: absolute;
+        bottom: 2px;
+    }
+    .container .call{
+        font-size: 4px;
+        width: 56px;
+        top: -25px;
+    }
+    }
+}
 .solarkits{
     background-color: #fefefe;
     color: black;
@@ -316,6 +481,36 @@ body{
     }
 
 }
+@media (max-width: 320px) {
+    .solarkits{
+    width: 320px;
+    margin-bottom: 120px;
+
+    .text h1{
+        font-size: 33px;
+        margin-top: -100px;
+    }
+    .text p{
+        width: 280px;
+        font-size: 12px;
+        margin: auto;
+    }
+    .container{
+            width: 300px;
+            padding: 0px 10px;
+            margin: 0;
+            
+            display: block;
+            margin: auto;
+            margin-top: 42px;
+    }
+    .container .shape{
+        font-size: 10px;
+        margin-top: 40px;
+    }
+
+    }
+}
 
 .repair{
     position: relative;
@@ -347,6 +542,36 @@ body{
             position: relative;
             bottom: 63px;
         }
+    }
+}
+@media (max-width: 320px) {
+
+    .repair{
+    width: 320px;
+    margin-bottom: 120px;
+    
+    .container{
+        margin-left: -21px;
+        top: 16px;
+        width: 200px;
+        height: 86px;
+        padding: 0px 10px;
+
+        h2{
+        font-size: 10px;
+        text-align: center;
+        margin-top: 5px;
+        }
+        p{
+        font-size: 5px;
+        margin: 0;
+        margin-top: 66px;
+        }
+    }
+    img{
+        width: 100%;
+        margin-bottom: 50px;
+    }
     }
 }
 
@@ -431,6 +656,73 @@ body{
     }
 }
 }
+@media (max-width: 320px) {
+
+    .innovators{
+    width: 320px;
+
+    i:nth-child(1){
+        height: 40px;
+        font-size: 16px;
+        width: 40px;
+        padding: 4px;
+        position: relative;
+        bottom: 14pc;
+        right: 3pc;
+    }
+    h1{
+        bottom: 14pc;
+        margin-left: 20px;
+        position: relative;
+        font-size: 20px;
+    }
+    .rrr{
+        position: relative;
+        bottom: 15pc;
+        left: -2pc;
+        font-size: 14px;
+        width: 11pc;
+    }
+    .container{
+        padding: 0px 10px;
+        position: relative;
+        left: -2pc;
+        top: -10pc;
+
+        .square{
+            width: 18pc;
+            height: 26pc;
+            margin-left: 25px;
+            padding: 10px 10px;
+            margin-bottom: 70px;
+
+            img{
+                width: 13pc;
+                height: 4pc;
+            }
+            h2{
+                font-size: 15px;
+            }
+            p{
+                font-size: 11px;
+                width: 160px;
+            }
+            span{
+                font-size: 14px;
+                position: relative;
+                right: 40px;
+            }
+            i{
+                position: relative;
+                right: 43px;
+                top: 33px;
+            }
+
+        }
+    }
+    }
+}
+
 .values{
     background-color: white;
     color: black;
@@ -479,6 +771,41 @@ body{
             }
 
         }
+    }
+}
+@media (max-width: 320px) {
+
+    .values{
+    width: 320px;
+
+    .text{
+        h1{
+            font-size: 27px;
+            margin: 0;
+
+        }
+        p{
+            padding: 10px 10px;
+            font-size: 10px;
+            width: fit-content;
+            text-align: center;
+        }
+    }
+    .container{
+        padding: 0px 10px;
+        display: block;
+        .content{
+            margin-bottom: 20px;
+            i{
+                font-size: 23px;
+
+            }
+            p{
+                font-size: 10px;
+                    width: 8pc;
+            }
+        }
+    }
     }
 }
 
@@ -648,6 +975,67 @@ body{
         }
     }
 }
+@media (max-width: 320px) {
+
+    .feedback{
+    width: 280px;
+
+    .container{
+        padding: 0px 10px;
+        display: block;
+
+            i{
+                font-size: 20px;
+                position: relative;
+                top: -50px;
+            }
+            h1{
+                width: 15pc;
+                position: relative;
+                top: -2pc;
+                font-size: 33px;
+            }
+            .first{
+            position: relative;
+            top: -4px;
+            font-size: 15px;
+            width: 14pc;
+            }
+            .opinion{
+                width: 300px;
+                h3{
+                    padding: 30px 10px;
+                }
+                p{
+                    margin: 0;
+                    font-size: 17px;
+                    width: 14pc;
+                    margin-left: 35px;
+                }
+            }
+            .person{
+                p{
+                    font-size: 10px;
+                    position: relative;
+                    top: 4pc;
+                }
+                h2{
+                    font-size: 13px;
+                }
+            }
+            .circle{
+                top: 18px;
+                right: -65px;
+            }
+            .circle1{
+                display: none;
+            }
+            .circle2{
+                display: none;
+            }
+        }
+    }
+}
 
 .Footer{
     background-color: #283646;
@@ -742,5 +1130,72 @@ body{
         
 
 
+    }
+}
+@media (max-width: 320px) {
+
+    .Footer{
+    width: 320px;
+
+    .container{
+        padding: 0px 10px;
+
+        img{
+            display:none;
+
+        }
+        .fir{
+            position: relative;
+            top: 25px;
+            display: block;
+            font-size: 17px;
+            li{
+                margin-bottom: 10px;
+            }
+        }
+        .line{
+            width: 17pc;
+
+        }
+        .sec{
+            position: relative;
+            top: 85px;
+            font-size: 8px;
+            li{
+
+            }
+            li::before{
+                display: none;
+            }
+        }
+        .Subscribe{
+            right: 0;
+            left: 0;
+            p{
+                position: absolute;
+                font-size: 13px;
+                margin-left: 20px;
+                top: 10pc;
+            }
+            .email{
+                margin-left: 20px;
+                width: 13pc;
+                position: absolute;
+                top: 12pc;
+            }
+            .sub{
+                left: 163px;
+                width: 5pc;
+                position: absolute;
+                top: 12pc;
+
+            }
+        }
+            p:last-child{
+                top: 6pc;
+                font-size: 10px;
+                left: 0;
+            }
+        }
     }
 }
